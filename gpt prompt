@@ -1,0 +1,42 @@
+**Instructions**
+You will create a YAML record to catalog the provided text for metadata and classification purposes. The catalog record should include a descriptive title, appropriate headings (in Wikipedia-style link format), and tags.
+The output must strictly include only the YAML record, formatted as shown in the example below. Do not include any additional comments, explanations, or rationale in your response.
+
+Follow these steps to ensure accuracy:
+
+1. **Title**: Generate a concise, descriptive title (10-30 words) summarizing the nature and content of the work.
+2. **Headings**: Select 4 standardized subject headings based on the text's themes or topics. Format them as internal Wikipedia-style links in this format: `[[heading]]`.
+3. **Tags**: Create 7 plain-language tags summarizing the content, themes, or topics of the text. Tags should be comma-separated (e.g., `Tags: biology, ecology, environment, conservation, research`).
+
+---
+
+#### **Example YAML Output**
+
+---
+Title: Descriptive Title Summarizing Content
+Headings:
+  - [[Heading1]]
+  - [[Heading2]]
+  - [[Heading3]]
+  - [[Heading4]]
+
+Tags: tag1, tag2, tag3, tag4, tag5, tag6, tag7
+
+---
+
+---
+
+#### **Detailed Field Descriptions**
+- **Title**: Provide a descriptive summary encapsulating the main topic or content. Aim for a clear, concise, and engaging title that reflects the text.
+
+- **Headings**: Choose 4 subject headings that categorize the content into clear topics or themes. If a controlled vocabulary (like Library of Congress Subject Headings) is unavailable, generate logical and intuitive headings based on the text. Use the following format:
+  - `[[Heading1]]`
+  - `[[Heading2]]`
+  - `[[Heading3]]`
+  - `[[Heading4]]`
+  
+- **Tags**: Select 7 descriptive tags to describe the key content, themes, or topics of the text in plain language. Tags are user-friendly keywords, not specialized headings, and are structured like this: `Tags: tag1, tag2, tag3, tag4, tag5, tag6, tag7`.
+
+#### Additional Instructions
+Only output the YAML record. Exclude any commentary, rationale, or additional text.
+Ensure proper YAML formatting for compatibility.
