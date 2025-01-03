@@ -1,7 +1,7 @@
 ## Overview
 `YAMLDevonThink.applescript` is an AppleScript designed to interact with the DevonThink application. This script processes selected Markdown records, extracting metadata and tags from the content formatted in YAML style. It clears existing custom metadata and tags before populating them with new values derived from the Markdown content.
 The metadata for the record is created and updated from the YAML section of the markdown file. This helps in keeping your data organized by not having consistent data.
-You can add customized #tag if you select the "convert hashtags to tags" option in the settings of DevonThink.
+You can add customized #tag if you select the "convert hashtags to tags" option in the settings of DevonThink. You will need to add an extra return before the second "---" for the #tag to work.
 
 The filename is set to whatever is in the Title: field.
 
@@ -39,7 +39,9 @@ The script expects the Markdown content to be formatted in a specific way. Hereâ
 markdown
 ---
 title: My Document Title
+
 Tags: tag1, tag2, tag3
+
 ---
 Content of the document goes here...
 
